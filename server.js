@@ -3,7 +3,7 @@ const path = require('path');
 const app = express();
 
 // 🔥 IMPORTANTE
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 3000;
 
 app.use(express.static(path.join(__dirname)));
 
